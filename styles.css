@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+.btn-start {
+    background-color: #fa923f;
+    color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 20px auto;
+    display: block;
+    width: 20rem;
+    height: 2rem;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.btn-start:hover {
+    box-shadow: 0 12px 16px 0
+    rgba(0, 0, 0, 0.24);
+}
+.container {
+    width: 600px;
+    height: 600px;
+    border: 5px solid black;
+    margin: 15px auto;
+    background-image: url("./images/calendar1.jpg");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3, 50%);
+    grid-template-rows: repeat(3 , 1fr);
+    grid-template-areas: 
+    "door1 door2 "
+    "door3 door4"
+    "door5 door6";
+}  
+
+.image{
+    background-image: none;
+    background-size: cover;
+    background-position: center; 
+}
+
+.text {
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    border: 2px solid black;
+    /* transition: opacity 2.5s; */
+}
+
+footer {
+    background-color: red;
+}
+
+.contactas {
+    background-color: red; 
+}
+
+.facebook {
+    background-image: url("./images/facebook-brands.svg");
+    
+}
