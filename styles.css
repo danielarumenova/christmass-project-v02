@@ -23,14 +23,14 @@
     width: 600px;
     height: 600px;
     border: 5px solid black;
-    margin: 15px auto;
+    margin: 10px auto;
     background-image: url("./images/calendar1.jpg");
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(3, 50%);
     grid-template-rows: repeat(3 , 1fr);
     grid-template-areas: 
-    "door1 door2 "
+    "door1 door2"
     "door3 door4"
     "door5 door6";
 }  
@@ -48,17 +48,4 @@
     padding: 10px;
     border: 2px solid black;
     /* transition: opacity 2.5s; */
-}
-
-footer {
-    background-color: red;
-}
-
-.contactas {
-    background-color: red; 
-}
-
-.facebook {
-    background-image: url("./images/facebook-brands.svg");
-    
 }
