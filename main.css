@@ -123,16 +123,25 @@ ul li a {
   width: 80%;
   margin: auto;
   padding: 30px 0;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
 }
 
 .content1 {
   grid-area: content1;
+  background-color: var(--dark-red);
+  width: 100%;
 }
 .content2 {
   grid-area: content2;
+  width: 100%;
+  background-color: var(--dark-green);
 }
 .content3 {
   grid-area: content3;
+  width: 100%;
+  background-color: var(--dark-red);
 }
 
 img {
@@ -142,11 +151,20 @@ img {
 .text-2 {
   margin: auto;
   padding: 20px;
+  
+}
+h1{
+  font-family: 'Mountains of Christmas', cursive;
+
 }
 
 h2 {
   margin-bottom: 40px;
+  font-family: 'Mountains of Christmas', cursive;
+  color: var(--light-green);
 }
+
+
 
 .opening-hours {
   grid-area: opening-hours;
@@ -154,6 +172,7 @@ h2 {
   width: 50%;
   text-align: center;
   margin-top: 100px;
+  
 }
 
 .opening-hours > h2 {
@@ -188,3 +207,57 @@ grid-area: calendar;
   
   
 }
+
+#footer {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  height: 250px;
+  margin-top: -100px;
+  margin-bottom:8px;
+  margin-left: 0;
+}
+
+#footer ul{
+  display: flex;
+  margin-top: 0px;
+  padding-left: 10px;
+}
+
+.social-items{
+  padding-right: 20px;
+}
+
+.Contacts {
+  padding-left: 15px;
+  color: blueviolet;
+  font-size: 25px;
+}
+
+.logo {
+  padding-left: 115px;
+}
+
+.map {
+  padding-left: 135px;
+}
+
+.container-contacts {
+  color: pink;
+  font-size: 13px;
+}
+
+.ACadmin {
+  color: blueviolet;
+  font-size: 25px;
+}
+
+.Adress {
+  color: blueviolet;
+  font-size: 15px;
+}
+
+.Citymanager {
+  color: blueviolet;
+}
+
