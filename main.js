@@ -26,7 +26,7 @@ const createCalendar = () => {
         calendarDoor.appendChild(calendarDoorText);
 
         imagesNumber = i + 1;
-        let imagesPath = `./images/calendar${imagesNumber}.jpg`;
+        let imagesPath = `./images/calendar${imagesNumber}.jpeg`;
 
         calendarDoorText.addEventListener("click", openDoor.bind(null, imagesPath));
         // calendarDoorText.classList.add("text");

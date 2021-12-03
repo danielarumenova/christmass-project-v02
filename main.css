@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --red: rgb(255, 96, 96);
+  --mint: #c0fabf;
+  --dark-green: #4da370;
+  --light-red: #eb5952;
+  --light-green: #c0d66d;
+  --dark-red: #c82542;
+  --gold: #ffd700;
+  --dark-orange: #ff8c00;
+  --pale-gold: #e6be8a;
+}
+
+.container-2 {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 2%;
+  grid-template-areas:
+    "video video video video"
+    "nav nav nav nav"
+    "covidinfo covidinfo covidinfo covidinfo"
+    "main main main main"
+    "content1 content1 content1 content1"
+    "content2 content2 content2 content2"
+    "content3 content3 content3 content3"
+    "opening-hours opening-hours opening-hours opening-hours"
+    "button button button button"
+    "calendar calendar calendar calendar"
+    "slideshow slideshow slideshow slideshow"
+    "list list list list"
+    "map map map map"
+    "footer footer footer footer";
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI";
+}
+
+.video {
+  grid-area: video;
+  align-self: center;
+  padding: 0;
+  margin: 0;
+}
+
+.covidinfo {
+  background-color: var(--red);
+  grid-area: covidinfo;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  grid-area: main;
+  font-size: 40px;
+  text-align: center;
+}
+
+main p {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+button {
+  margin: 30px 0;
+  font-size: 25px;
+  height: auto;
+  width: 200px;
+  align-self: center;
+  font-style: italic;
+  font-family: "Helvetica Neue";
+}
+.navigation {
+  grid-area: nav;
+  margin: auto;
+  align-self: center;
+}
+
+.nav1,
+.nav2,
+.nav3,
+.nav4 {
+  margin: auto;
+  padding: 40px;
+}
+
+.navigation .nav1,
+.nav2,
+.nav3,
+.nav4,
+ul {
+  list-style-type: none;
+  align-self: center;
+}
+.navigation .nav1,
+.nav2,
+.nav3,
+.nav4,
+ul li {
+  text-decoration: none;
+}
+.navigation .nav1,
+.nav2,
+.nav3,
+.nav4,
+ul li a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.content1,
+.content2,
+.content3 {
+  margin: 20px 0;
+  grid-column: 1 / 4;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.content1 {
+  grid-area: content1;
+}
+.content2 {
+  grid-area: content2;
+}
+.content3 {
+  grid-area: content3;
+}
+
+img {
+  width: 500px;
+}
+
+.text-2 {
+  margin: auto;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 40px;
+}
+
+.opening-hours {
+  grid-area: opening-hours;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.opening-hours > h2 {
+  margin-bottom: 20px;
+}
+
+.opening-hours > p {
+  font-size: small;
+  line-height: 30px;
+  padding-bottom: 100px;
+}
+
+.btn-start {
+    grid-area: button;
+}
+
+.container {
+grid-area: calendar;
+}
+
+.map {
+    grid-area: map;
+    margin: auto;
+    margin-top: 100px;
+    grid-column: 2 / 3;
+    align-content: center;
+  }
+  
+.map h2 {
+  grid-area: map;
+  margin-bottom: 20px auto;
+  
+  
+}
